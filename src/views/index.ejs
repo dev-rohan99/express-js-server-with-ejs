@@ -1,0 +1,54 @@
+<div class="mainWrapper">
+    <div class="containerWrapper shadow">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-11 m-auto outputSection pt-3 pb-3">
+                    <div class="secWrapper2">
+
+                        <div class="col-md-12 formWrapper2 shadow">
+                            
+                        
+                            <div class="d-flex justify-content-center">
+                                <a class="btn btn-success mb-3 btn-sm" href="employee/add-employee">Add new employee</a>
+                            </div>
+
+                            <table class="table table-dark table-striped">
+                                <thead>
+                                  <tr>
+                                    <th>Name</th>
+                                    <th>E-mail</th>
+                                    <th>Address</th>
+                                    <th>Phone</th>
+                                    <th>Manage</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <% employees.forEach((element, index) => { %>
+                                   
+                                    <tr>
+                                        <td><%= element.Name %></td>
+                                        <td><%= element.Email %></td>
+                                        <td><%= element.Address %></td>
+                                        <td><%= element.Number %></td>
+                                        <td>
+                                            <a href="employee/<%= element._id %>" class="btn btn-primary btn-sm"><i class='bx bxs-show'></i></a>&nbsp;
+                                            <a href="/api/employee/update/<%= element._id %>" class="btn btn-secondary btn-sm"><i class='bx bxs-edit'></i></a>&nbsp;
+                                            <a href="/api/employee/delete/<%= element._id %>" class="btn btn-danger btn-sm"><i class='bx bxs-trash' ></i></a>
+                                        </td>
+                                    </tr>
+
+                                  <% }) %>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

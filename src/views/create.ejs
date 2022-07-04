@@ -1,0 +1,71 @@
+
+
+
+    <div class="mainWrapper">
+        <div class="containerWrapper shadow">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-11 m-auto outputSection pt-3 pb-3">
+                        <div class="secWrapper2">
+                            <div class="col-md-12 formWrapper2 shadow">
+                                <h1 style="border-bottom: 2px solid #fff;" class="text-center pb-3 mb-3">ADD EMPLOYEE</h1>
+                                <form action="/api/employee/" method="POST" enctype="multipart/form-data">
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="emName">Employee Name</label>
+                                            <input name="Name" type="text" id="emName" class="form-control">
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="emEmail">Employee E-mail</label>
+                                            <input name="Email" type="email" id="emEmail" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="emAddress">Employee Address</label>
+                                            <input name="Address" type="text" id="emAddress" class="form-control">
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="emNumb">Employee Number</label>
+                                            <input name="Number" type="text" id="emNumb" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="emPhoto">Employee Photo</label>
+                                            <input name="Photo" type="file" id="emPhoto" class="form-control">
+                                        </div>
+                                        <div class="col-md-6 mb-3 mt-2">
+                                            
+                                            <h5>Employee Gender</h5>
+
+                                            <input name="Gender" type="radio" value="Male" id="emgen"> &nbsp;<label for="emgen">Male</label>
+
+                                             &nbsp;&nbsp; 
+
+                                            <input name="Gender" type="radio" value="Female" id="emfe"> &nbsp;<label for="emfe">Female</label> 
+
+                                            &nbsp;&nbsp;
+
+                                            <input name="Gender" type="radio" value="Others" id="emOther"> &nbsp;<label for="emOther">Others</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <button type="submit" class="btn btn-primary w-100">Submit Employee's Data</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    

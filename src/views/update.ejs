@@ -1,0 +1,82 @@
+
+
+
+    <div class="mainWrapper">
+        <div class="containerWrapper shadow">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-11 m-auto outputSection pt-3 pb-3">
+                        <div class="secWrapper2">
+                            <div class="col-md-12 formWrapper2 shadow">
+                                <h1 style="border-bottom: 2px solid #fff;" class="text-center pb-3 mb-3">UPDATE EMPLOYEE</h1>
+                                <form action="" method="POST" enctype="multipart/form-data">
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="emName2">Employee Name</label>
+                                            <input name="Name" type="text" id="emName2" value="<%= editEmployee.Name %>" class="form-control">
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="emEmail2">Employee E-mail</label>
+                                            <input value="<%= editEmployee.Email %>" name="Email" type="email" id="emEmail2" class="form-control">
+
+                                            <input type="hidden" name="_method" value="PATCH">
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="emAddress2">Employee Address</label>
+                                            <input value="<%= editEmployee.Address %>" name="Address" type="text" id="emAddress2" class="form-control">
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="emNumb2">Employee Number</label>
+                                            <input value="<%= editEmployee.Number %>" name="Number" type="text" id="emNumb2" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <input value="<%= editEmployee.Photo %>" name="OldPhoto" type="hidden" id="oldEmPhoto2" class="form-control">
+                                            <label>Previous Photo</label>
+                                            <div>
+                                                <img class="mb-3" style="width: 100px;height:100px;border-radius:5px;object-fit:cover;" src="/uploads/<%= editEmployee.Photo %>" alt="">
+                                            </div>
+
+                                            <label for="emPhoto2">Employee Photo</label>
+                                            <input value="" name="Photo" type="file" id="emPhoto2" class="form-control">
+                                        </div>
+
+
+
+                                        <div class="col-md-6 mb-3 mt-2">
+                                            
+                                            <h5>Employee Gender</h5>
+
+                                            <input name="Gender" type="radio" value="Male" id="emgen2"> &nbsp;<label for="emgen2">Male</label>
+
+                                             &nbsp;&nbsp; 
+
+                                            <input name="Gender" type="radio" value="Female" id="emfe2"> &nbsp;<label for="emfe2">Female</label> 
+
+                                            &nbsp;&nbsp;
+
+                                            <input name="Gender" type="radio" value="Others" id="emOther2"> &nbsp;<label for="emOther2">Others</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <button type="submit" class="btn btn-primary w-100">Submit Update Employee's Data</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
